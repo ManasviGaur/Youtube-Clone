@@ -2,8 +2,21 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+}
 header{
     background-color: rgb(36, 35, 35);
     color: white;
@@ -46,11 +59,11 @@ header form input[type = "text"]{
     width: 30vw;
     height: 5vh;
     background-color: rgb(20, 20, 20);
-    color: white;
+    color: rgb(175, 175, 175);
     border: none;
 }
 header form input::placeholder{
-    color:rgb(241, 241, 241)
+    color:rgb(175, 175, 175)
 }
 header form input[type = "image"]{
     height: 4vh;
@@ -78,19 +91,57 @@ header .right img{
 }
 
 .sidebar{
-    width: 15vw;
+    width: 17vw;
     height: 90vh;
+    /* position: fixed; */
+    overflow-y: scroll;
     background-color: rgb(36, 35, 35);
     color:rgb(241, 241, 241);
-
 }
 .sidebar .separator{
-    width: 15vw;
+    width: 17vw;
     height: 1px;
     background-color: rgb(105, 104, 104);
     margin: 5px 0;
 }
+.sidebar .panel .lnk, .sub{
+    display: flex;
+    align-items: center;
+}
+.sidebar h3{
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-size: 1rem;
+}
+.sidebar .panel img{
+    height: 3vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+.sidebar .panel h2{
+    color:rgb(151, 148, 148);
+    padding-left: 1.5vw;
+    font-size: 0.9rem;
+}
+.sidebar footer{
+    padding-left: 1.5vw;
+    padding-right: 2vw;
+}
+.sidebar footer>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1vh;
+    color:rgb(190, 190, 190);
+}
+.sidebar .cpy{
+    justify-content: flex-start;
+    font-size: smaller;
+    color: rgb(145, 142, 142);
+}
 .content{
-    width: 85vw;
+    width: 83vw;
+    height: 90vh;
+    overflow-y: scroll;
     background-color: rgb(20, 20, 20);
 }
