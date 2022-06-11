@@ -108,6 +108,9 @@ header .right img{
     display: flex;
     align-items: center;
 }
+.sidebar .lnk:hover{
+    background-color: #555;
+}
 .sidebar h3{
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
@@ -145,3 +148,6 @@ header .right img{
     overflow-y: scroll;
     background-color: rgb(20, 20, 20);
 }
+/* .content .tags{
+    color: white;
+} */
